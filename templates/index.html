@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <!-- The evaluation below is being executed in python -->
+    <h2>{{ 5 * 6 }}</h2>
+    <h3>Random Number: {{ num }}</h3>
+<!--  url_for links the function in charge of the route, not the route itself  -->
+<!--  url_for binds the url to the method  -->
+<a href="{{ url_for('get_blog', num=3) }}">Go To Blog</a>
+</body>
+<footer>
+    <p>Copyright {{ year }}. We are always updated!</p>
+</footer>
+</html>
